@@ -20,6 +20,7 @@ ul{
 }
 
 .lista-links{
+    display: flex;
     margin-top:10px;
 }
 .lista-links li{
@@ -56,7 +57,6 @@ ul li a:hover{
     overflow: hidden;
     background-color:rgb(52, 58, 64);
     padding:50px;
-    height: 100vh;
 }
 
 .paquetes:after{
@@ -85,8 +85,8 @@ ul li a:hover{
 
 .precios{
     width: 100%;
-    height: 100vh;
-    padding-top:100px;
+    padding:100px;
+
     position: relative;
     overflow: hidden;
     background-color:goldenrod;
@@ -123,11 +123,12 @@ ul li a:hover{
 
 .card{
     width: 17rem;
+    margin:auto;
+    margin-bottom: 50px;
     /*background-color:rgb(52, 58, 64) !important;*/
     background-color:orangered !important;
     box-shadow: 5px 5px black;
 }
-
 
 .card .titulo-card{
     color:white;
@@ -149,8 +150,7 @@ ul li a:hover{
     background-color:lightblue;
     position: relative;
     overflow: hidden;
-    height: 60vh;
-    padding: 30px 0 40px 0;
+    padding: 50px 0 150px 0;
 }
 
 .servicios:after{
@@ -194,4 +194,10 @@ a{
 
 .redes:hover{
     color:blue;
+}
+
+@media screen and (max-width: 1080px){
+    .lista-links{
+        display: none;
+    }
 }
