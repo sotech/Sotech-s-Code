@@ -3,6 +3,10 @@
     padding:0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: lightgreen !important;
     background-image: url("../img/portada.jpg");
@@ -11,18 +15,172 @@ body{
     background-attachment: fixed;
 }
 
-nav{
+ul{
+    list-style: none;
+}
+
+.lista-links{
+    margin-top:10px;
+}
+.lista-links li{
+    display: inline;
+}
+
+
+ul li a{
+    margin:10px;
     padding:10px;
+    box-shadow: 1px 1px solid white;
+    color:blue;
+}
+
+
+
+ul li a:hover{
+    transition: box-shadow 1s;
+    box-shadow: 5px 5px black;
+}
+
+.activo{
+    background-color:black;
 }
 
 .portada{
-   height: 500px;
+   height: 100vh;
    opacity: 0.8;
    background-color: gray;
 }
 
+.paquetes{
+    position: relative;
+    overflow: hidden;
+    background-color:rgb(52, 58, 64);
+    padding:50px;
+    height: 100vh;
+}
+
+.paquetes:after{
+    content: '';
+    background-color:goldenrod;
+    position: absolute;
+    top:100%;
+    left:-50%;
+    width: 100%;
+    height: 100%;
+    transform-origin: right;
+    transform:skewY(8deg);
+}
+
+.paquetes:before{
+    content: '';
+    background-color:goldenrod;
+    position: absolute;
+    top:100%;
+    right:-50%;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    transform:skewY(-8deg);
+}
+
+.precios{
+    width: 100%;
+    height: 100vh;
+    padding-top:100px;
+    position: relative;
+    overflow: hidden;
+    background-color:goldenrod;
+}
+
+.precios:after{
+    content: '';
+    background-color: lightblue;
+    position: absolute;
+    top:100%;
+    left:-50%;
+    width: 100%;
+    height: 100%;
+    transform-origin: right;
+    transform:skewY(8deg);
+}
+
+.precios:before{
+    content: '';
+    background-color: lightblue;
+    position: absolute;
+    top:100%;
+    right:-50%;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    transform:skewY(-8deg);
+}
+
+.precios .row{
+    width: 80%;
+    margin:auto;
+}
+
+.card{
+    width: 17rem;
+    /*background-color:rgb(52, 58, 64) !important;*/
+    background-color:orangered !important;
+    box-shadow: 5px 5px black;
+}
+
+
+.card .titulo-card{
+    color:white;
+    text-shadow: 5px 5px gray;
+}
+.card ul li{
+    color:white !important;
+    padding: 5px;
+}
+
+.card .texto-precio{
+    color:gold;
+    border: 2px solid orange;
+    border-radius: 30px;
+
+}
+
 .servicios{
     background-color:lightblue;
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
+    padding: 30px 0 40px 0;
+}
+
+.servicios:after{
+    content: '';
+    background-color: darkslategrey;
+    position: absolute;
+    top:100%;
+    left:-50%;
+    width: 100%;
+    height: 100%;
+    transform-origin: right;
+    transform:skewY(8deg);
+}
+
+.servicios:before{
+    content: '';
+    background-color: darkslategrey;
+    position: absolute;
+    top:100%;
+    right:-50%;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    transform:skewY(-8deg);
+}
+
+.beneficios{
+    background-color: darkslategrey;
+    padding: 50px 0 100px 0;
+    
 }
 
 i{

@@ -12,8 +12,15 @@
     </head>
 <body>
     <!--nav-->
-    <nav class="bg-dark">
-        <h4 class="text-light text-center">SOTECH WEB DESIGN</h4>
+    <nav class="navbar fixed-top navbar-expand-sm bg-dark d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">SOTECH WEB DESIGN</a>
+        <ul class="lista-links">
+            <li><a href="#paquetes">OFERTAS</a></li>
+            <li><a href="#precios">PRECIOS</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#beneficios">BENEFICIOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
     </nav>
     <!--portada todo fade-->
     <div class="container-fluid portada d-flex flex-column justify-content-center align-items-center">
@@ -21,9 +28,9 @@
         <p class="lead text-light text-center" data-aos="fade-left" data-aos-duration="3000">Landing pages, Ecommerce, Blogs, Empresas y Negocios</p>
     </div>
     <!--paquetes-->
-    <div class="container-fluid bg-dark pt-3">
+    <div class="container-fluid paquetes bg-dark" id="paquetes">
         <div class="bg-dark">
-            <h4 class="text-center text-white pt-5 mb-3">NUESTROS SERVICIOS</h4>
+            <h4 class="text-center text-white pt-5 mb-3">NUESTRAS OFERTAS</h4>
             <div class="row mx-auto d-flex justify-content-center text-white">
                 <div class="col-sm-3 col-md-3 col-lg-3 p-3" data-aos="zoom-in-down" data-aos-delay="500" data-aos-duration="700">
                     <h4 class="p-2 text-center">Landing Page</h4>
@@ -46,10 +53,57 @@
             </div>
         </div>
     </div>
+    <!--Precios-->
+    <div class="container-fluid precios text-center" id="precios">
+        <h2 class="mb-5" data-aos="fade-up">PRECIOS</h2>
+        <div class="row mx-auto d-flex justify-content-center"> 
+            <div class="carta col-sm-3 col-md-3 col-lg-3">
+                <div class="card p-2" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="titulo-card">LANDING PAGE</h2>
+                    <hr>
+                    <ul class="lista-beneficios">
+                        <li>Diseño Responsivo.</li>
+                        <li>Menúes y formulario de Contacto.</li>
+                        <li>5 Páginas con 20 Imágenes.</li>
+                        <li>¡Diseños Personalizados!</li>
+                    </ul>
+                    <h3 class="texto-precio">$5.000</h3>
+                </div>
+            </div>
+            <div class="carta col-sm-3 col-md-3 col-lg-3">
+                <div class="card p-2" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="titulo-card">PROFESIONAL</h2>
+                    <hr>
+                    <ul class="lista-beneficios">
+                        <li>Diseño Responsivo.</li>
+                        <li>Funcionalidades a pedido.</li>
+                        <li>Cantidad ilimitada de páginas y mayor número de imágenes.</li>
+                        <li>Soporte para modificar y rediseñar el sitio a pedido.</li>
+                        <li>¡Diseños Personalizados!</li>
+                    </ul>
+                    <h3 class="texto-precio">CONSULTAR</h3>
+                </div>
+            </div>
+            <div class="carta col-sm-3 col-md-3 col-lg-3">
+                <div class="card p-2" data-aos="fade-left" data-aos-duration="1000">
+                    <h2 class="titulo-card">E-COMMERCE</h2>
+                    <hr>
+                    <ul class="lista-beneficios">
+                        <li>Diseño Responsivo.</li>
+                        <li>Conexion a base de datos y pre carga de hasta 100 productos.</li>
+                        <li>Sistema de login y registro.</li>
+                        <li>Carrito de compras.</li>
+                        <li>¡Diseños Personalizados!</li>
+                    </ul>
+                    <h3 class="texto-precio">$15.000</h3>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Servicios-->
-    <div class="container-fluid servicios p-5">
+    <div class="container-fluid servicios d-flex justify-content-center align-items-center" id="servicios">
         <div class="container">
-            <h4>SERVICIOS</h4>
+            <h4 data-aos="fade-right">¿Que ofrecemos?</h4>
             <hr class="my-3">
             <div class="row">
                 <div class="col-sm-6 col-md-6" data-aos="fade-down-right">
@@ -71,13 +125,13 @@
                 <div class="col-sm-6 col-md-6" data-aos="fade-up-right">
                     <div>
                         <i class="icon-google"></i>
-                        <h4 class="d-inline">Posicionarse en navegadores</h4>
+                        <h4 class="d-inline">Posicionamiento en buscadores</h4>
                         <p>Publicite su sitio y aparezca en las primeras búsquedas en los distintos buscadores.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6" data-aos="fade-up-left">
                     <div>
-                        <i class="icon-mobile"></i>
+                        <i class="icon-database"></i>
                         <h4 class="d-inline">Base de datos</h4>
                         <p>Permita a su sitio web poseer un acceso eficiente a una base de datos para almacenar información como clientes, cuentas y productos</p>
                     </div>
@@ -86,10 +140,12 @@
         </div>
     </div>
     <!--Beneficios-->
-    <div class="container p-3">
+    <div class="container-fluid beneficios" id="beneficios">
+        <h4 class="text-white">Algunas de nuestras características...</h4>
+        <hr class="my-3">
         <div class="table-responsive">
-            <table class="table table-dark">
-                <thead class="text-center">
+            <table class="table table-info table-inverse table-hover">
+                <thead class="text-center thead-dark">
                     <tr>
                         <th>Características</th>
                         <th>Landing page</th>
@@ -133,19 +189,19 @@
         </div>
     </div>
     <!--footer-->
-    <div class="container-fluid bg-dark text-light">
-            <div class="row p-4 d-flex justify-content-center align-items-center text-center">
-                <div class="col-sm-4">
-                    <h4 class="pb-3">CONTACTO</h4>
-                    <a href="https://www.facebook.com/SOTECHWD/" target="_blank"><i class="icon-facebook redes"></i></a>
-                    <a href="https://www.linkedin.com/in/german-sommariva-65683217b/" target="_blank"><i class="icon-linkedin redes"></i></a><br>
-                    <i class="icon-phone"></i>+54 387 6846639<br>
-                    <a href="mailto:germansommariva@gmail.com"><i class="icon-mail"> </i>germansommariva@gmail.com</a>
-                </div>
-                <div class="col-sm-4 ">
-                        <button class="btn btn-success m-3"><a href="https://wa.me/543876846639?text=Hola!%20Podes%20brindarme%20mas%20informaci%C3%B3n%20sobre%20los%20precios%20de%20dise%C3%B1o%20web?" target="_blank"><i class="icon-whatsapp"></i>ENVIAR WHATSAPP</a></button>
-                </div>
+    <div class="container mt-3 mb-3 bg-dark text-light" id="contacto">
+        <div class="row p-4 d-flex justify-content-center align-items-center text-center">
+            <div class="col-sm-4">
+                <h4 class="pb-3">CONTACTO</h4>
+                <a href="https://www.facebook.com/SOTECHWD/" target="_blank"><i class="icon-facebook redes"></i></a>
+                <a href="https://www.linkedin.com/in/german-sommariva-65683217b/" target="_blank"><i class="icon-linkedin redes"></i></a><br>
+                <i class="icon-phone"></i>+54 387 6846639<br>
+                <a href="mailto:germansommariva@gmail.com"><i class="icon-mail"> </i>germansommariva@gmail.com</a>
             </div>
+            <div class="col-sm-4 ">
+                    <button class="btn btn-success m-3"><a href="https://wa.me/543876846639?text=Hola!%20Podes%20brindarme%20mas%20informaci%C3%B3n%20sobre%20los%20precios%20de%20dise%C3%B1o%20web?" target="_blank"><i class="icon-whatsapp"></i>ENVIAR WHATSAPP</a></button>
+            </div>
+        </div>
     </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
